@@ -1,0 +1,84 @@
+type: ItemTurret
+name: Dispersion
+description: Fires some bullets. Works as shotgun
+size: 3
+category: turret
+research: {
+  parent: fuse
+  requirements: [
+    surge-alloy/1200
+    copper/12000
+    lead/6700
+    titanium/7800
+    thorium/5000
+    plastanium/1500
+  ]
+}
+researchCostMultiplier: 2.5
+shootSound: shotgun
+requirements: [
+    surge-alloy/120
+    copper/1200
+    lead/670
+    titanium/780
+    thorium/500
+    plastanium/150
+]
+coolant: {
+  type: ConsumeCoolant
+  allowGas: false
+  allowLiquid: true
+  amount: 0.3
+}
+outlineColor: 42413e
+targetAir: true
+targetGround: true
+reload: 78
+range: 140
+velocityRnd: 0.6
+inaccuracy: 30
+shoot: {
+  shots: 6
+  shotDelay: 1.1
+}
+ammoTypes: {
+  graphite: {
+    frontColor: 67728d
+    backColor: 5a6170
+    trailColor: 5a6170
+    type: ShrapnelBulletType
+    width: 8
+    height: 5
+    speed: 1.2
+    lifetime: 10
+    splashDamage: 45
+    splashDamageRadius: 15
+  }
+  titanium: {
+    frontColor: 00aaff
+    backColor: 419fce
+    trailColor: 419fce
+    type: ShrapnelBulletType
+    width: 8
+    height: 5
+    speed: 1.6
+    lifetime: 10
+    splashDamage: 39
+    splashDamageRadius: 18
+  }
+  thorium: {
+    frontColor: ff42b0
+    backColor: d962a7
+    trailColor: d962a7
+    type: ShrapnelBulletType
+    width: 9
+    height: 4
+    speed: 1.9
+    lifetime: 10
+    splashDamage: 57
+    splashDamageRadius: 17
+  }
+}
+drawer: {
+  type: DrawTurret
+}

@@ -1,0 +1,49 @@
+type: PowerTurret
+name: Luminary
+description: Electro-turret, what can destroy enemy with its lasers.
+size: 3
+reload: 100
+rotateSpeed: 1.3
+accurateDelay: false
+inaccuracy: 5
+shoot: {
+  firstShotDelay: 130
+  shots: 5
+  shotDelay: 12
+}
+range: 235
+outlineColor: 42413e
+shootSound: lasershoot
+chargeSound: lasercharge2
+researchCostMultiplier: 1.1
+shootType: {
+  type: LaserBulletType
+  colors: [00a0d1, 2985a1, ffffff]
+  lightningColor: e6aca3
+  length: 180
+  lightning: 10
+  lightningLength: 10
+  lightningDamage: 9
+  lightningCone: 90
+  damage: 43
+  buildingDamageMultiplier: 0.5
+  chargeEffect: lightningCharge
+  pierceCap: 6
+}
+category: turret
+squareSprite: false
+research: lancer
+requirements: [
+  surge-alloy/55
+  copper/500
+  lead/640
+  titanium/240
+  thorium/310
+]
+targetAir: true
+consumes: {
+  power: 10.0
+}
+drawer: {
+  type: DrawTurret
+}
