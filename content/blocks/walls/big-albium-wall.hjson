@@ -1,0 +1,12 @@
+type: Wall
+name: Large Albium Wall
+description: A large wall made from Albium. Protects allied structures from damage.
+size: 2
+health: 1690
+category: defense
+squareSprite: true
+research: albium-wall
+requirements: [
+  albium/24
+] 
+researchCostMultiplier: 2.0

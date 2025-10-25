@@ -1,0 +1,12 @@
+type: Wall
+name: Albium Wall
+description: A wall made from Albium. Protects allied structures from damage.
+size: 1
+health: 560
+category: defense
+squareSprite: true
+research: titanium-wall
+requirements: [
+  albium/6
+] 
+researchCostMultiplier: 2.0
